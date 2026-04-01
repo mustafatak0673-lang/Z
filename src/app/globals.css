@@ -4,33 +4,39 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: #0f1923;
+  background: #0c1420;
   color: #e8e0d4;
   font-family: Georgia, 'Times New Roman', serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: rgba(249,158,11,0.3); color: #fff; }
+::selection { background: rgba(251,191,36,0.25); color: #fff; }
 
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #0f1923; }
-::-webkit-scrollbar-thumb { background: #1e3a4a; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0c1420; }
+::-webkit-scrollbar-thumb { background: #1a2a3a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #fbbf24; }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-@keyframes pulse-soft {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.7; }
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+@keyframes float-slow-2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0; }
+  100% { transform: scale(0.8); opacity: 0.6; }
 }
 
 @media (max-width: 768px) {
