@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+
+# Build
+.next/
+out/
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# Database
+db/
+
+# Upload & misc
+upload/
+worklog.md
+search_results.json
+README_BACKUP.txt
+restart-dev.sh
+keep-alive.sh
+server.log
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Lockfiles & build artifacts
+bun.lock
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Not needed in repo
+skills/
+mini-services/
+examples/
+.zscripts/
+download/
+prisma/
+
+# Old unused components (keep only ui/)
+src/components/Hero.tsx
+src/components/Navbar.tsx
+src/components/About.tsx
+src/components/Services.tsx
+src/components/Projects.tsx
+src/components/FeaturedProject.tsx
+src/components/Stats.tsx
+src/components/Testimonials.tsx
+src/components/Process.tsx
+src/components/Team.tsx
+src/components/Blog.tsx
+src/components/Certificates.tsx
+src/components/CTA.tsx
+src/components/Contact.tsx
+src/components/Footer.tsx
+src/components/ZoomControl.tsx
+src/components/ScrollProgress.tsx
+
+# Old unused images (keep only construction/)
+public/images/gallery/
+public/images/games/
+public/images/bg-loader.png
+public/images/bg-main.png
+public/versus-logo-new.png
